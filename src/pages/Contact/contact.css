@@ -100,3 +100,14 @@
         text-align: center;
     }
 }
+.contact-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  will-change: transform, opacity;
+}
+
+.contact-section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -7,15 +7,17 @@
       background: #6d28d9;
       color:rgb(255, 255, 255);
       width: 200px;
-      border: 1px solid #2952e3;
+      border: 1px solid #6d28d9;
       height: 40px;
       box-shadow: 0 1px 10px white,0 1px 10px white;
+      transition: opacity 0.2s;
 }
 
 .btn-primary:hover{
-      background: rgb(0, 63, 158);
+      background: #6d28d9;
       color: #ffffff;
       border: 1px solid #6d28d9;
+      opacity:0.8;
 }
 
 .btn-secondary{

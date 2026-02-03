@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button/Button";
 import SynsaraLogo from "../../static/synsara-logo.png";
@@ -8,9 +8,11 @@ import "./Home_main2.css";
 import Bg from "./Bg.png";
 import { Media } from "reactstrap";
 import useIsMobile from "../../components/useIsMobile";
+import { gsap } from "gsap";
+
 
 const Home_main = ({ scrollToSection }) => {
-  const countDownDate = new Date("01 November, 2023").getTime()+(3600*1000*10); 
+  const countDownDate = new Date("28 February, 2026").getTime();/*+(3600*1000*10); modify this for specific hour*/
   const dev=useIsMobile();
 
   const animationVariants = {
