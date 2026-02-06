@@ -7,17 +7,6 @@
     }
 }
 
-@keyframes contact-fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(12px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .event-coordinator-holder {
     margin-bottom: 100px;
 }
@@ -45,30 +34,12 @@
 .con-title-main-uppercase {
     text-transform: uppercase;
     letter-spacing: 0.02em;
-    opacity: 0;
-    transform: translateY(16px);
 }
 
 .student-holder,
 .event-coordinator-holder {
-    opacity: 0;
-    transform: translateY(16px);
+    margin-top: 30px;
 }
-
-/* Animation runs only when section scrolls into view */
-.contact-section-in-view .con-title-main-uppercase {
-    animation: contact-fade-in 0.5s ease-out both;
-}
-
-.contact-section-in-view .student-holder,
-.contact-section-in-view .event-coordinator-holder {
-    animation: contact-fade-in 0.5s ease-out both;
-}
-
-.contact-section-in-view .student-holder:nth-child(3) { animation-delay: 0.08s; }
-.contact-section-in-view .student-holder:nth-child(4) { animation-delay: 0.18s; }
-.contact-section-in-view .student-holder:nth-child(5) { animation-delay: 0.28s; }
-.contact-section-in-view .event-coordinator-holder { animation-delay: 0.38s; }
 
 .con-title:hover {
     transform: scale(1.2);
