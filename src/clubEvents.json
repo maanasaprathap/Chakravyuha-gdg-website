@@ -1,0 +1,326 @@
+[
+  {
+    "clubId": "qcmit",
+    "clubName": "QCMIT",
+    "technicalEvents": [],
+    "funTechEvents": [
+      {
+        "eventId": "blitzkrieg-26",
+        "eventTitle": "Blitzkrieg'26",
+        "eventDate": "March 1",
+        "eventDescription": "Blitzkrieg is the flagship inter-collegiate quiz of QCMIT, a general quiz covering a wide range of topics from current affairs and history to science, sports, culture, and entertainment. The event is conducted in two stages- a preliminary round, followed by a competitive finals round with engaging and varied formats, making it a major highlight for quizzing enthusiasts.",
+        "venue": "RLHC Conference hall"
+      }
+    ],
+    "workshops": [
+      {
+        "eventId": "street-quizzing",
+        "eventTitle": "Street Quizzing",
+        "eventDate": "Feb 28",
+        "eventDescription": "Street Quizzing is a fun, one-on-one quiz event where participants can walk in anytime and challenge each other in quick rounds based on different themes. Find us anywhere on the campus and get into a challenge — expect fun twists and tasks for the losing side, all aimed at making quizzing engaging and enjoyable for everyone.",
+        "venue": "MIT ROAD"
+      }
+    ],
+    "hackathons": []
+  },
+  {
+    "clubId": "ausec-mit",
+    "clubName": "AUSEC MIT",
+    "technicalEvents": [],
+    "funTechEvents": [
+      {
+        "eventId": "monopoly",
+        "eventTitle": "Monopoly",
+        "eventDate": "Feb 28",
+        "eventDescription": "Test participants' abilities in financial decision-making, strategic thinking, risk management, leadership. The event aimed to simulate real-world financial and business scenarios under time pressure, enabling participants to gain hands-on experience in money flow management.",
+        "venue": "cb103"
+      }
+    ],
+    "workshops": [],
+    "hackathons": [
+      {
+        "eventId": "hackathon",
+        "eventTitle": "Hackathon",
+        "eventDate": "Feb 28",
+        "eventDescription": "The 24-Hour Hackathon is aimed at fostering innovation, teamwork, and real-world problem-solving skills among students. The event follows a multi-stage evaluation process, beginning with an online screening round and culminating in a 24-hour offline hackathon where shortlisted teams develop and present working prototypes to an expert judging panel.",
+        "venue": "srk/rajam"
+      },
+      {
+        "eventId": "hackathon-finale",
+        "eventTitle": "Hackathon: Finale",
+        "eventDate": "March 1",
+        "eventDescription": "Final round of the 24-hour hackathon where teams present their working prototypes.",
+        "venue": "srk/rajam"
+      }
+    ]
+  },
+  {
+    "clubId": "mitra",
+    "clubName": "MITRA",
+    "technicalEvents": [
+      {
+        "eventId": "robo-sumo",
+        "eventTitle": "Robo Sumo",
+        "eventDate": "Feb 28",
+        "eventDescription": "A competitive robotics event where two robots face off in a sumo-style arena, and the robot that pushes its opponent outside the circular ring the most number of times wins the challenge.",
+        "venue": "hanger 1"
+      },
+      {
+        "eventId": "robo-soccer",
+        "eventTitle": "Robo Soccer",
+        "eventDate": "Feb 28",
+        "eventDescription": "A competitive robotics event where robots compete in a soccer match, and the robot that scores the highest number of goals within the given time limit wins.",
+        "venue": "hanger 1"
+      },
+      {
+        "eventId": "robo-rush",
+        "eventTitle": "Robo Rush",
+        "eventDate": "Feb 28",
+        "eventDescription": "A competitive robotics event where robots navigate an all-terrain course with multiple obstacles, and the robot that completes the course in the shortest time wins the challenge.",
+        "venue": "stone bench"
+      },
+      {
+        "eventId": "robo-popz",
+        "eventTitle": "Robo Popz",
+        "eventDate": "Feb 28",
+        "eventDescription": "A fun robotics event where robots are tasked with popping the maximum number of balloons within a fixed time limit, testing precision, control, and strategic movement.",
+        "venue": "connect pt"
+      }
+    ],
+    "funTechEvents": [],
+    "workshops": [],
+    "hackathons": []
+  },
+  {
+    "clubId": "mit-met",
+    "clubName": "MIT MeT",
+    "technicalEvents": [
+      {
+        "eventId": "weather-tech-pitch",
+        "eventTitle": "Weather Tech Pitch",
+        "eventDate": "Feb 28",
+        "eventDescription": "A fast-paced, idea-generation challenge where participants solve real-world weather problems using creativity, simple tech, and practical thinking. Conducted fully in one day with two short rounds.",
+        "venue": "LHC"
+      },
+      {
+        "eventId": "quiz-station",
+        "eventTitle": "Quiz Station",
+        "eventDate": "Feb 28",
+        "eventDescription": "Round 1 - Case Study, Round 2 - Quiz related to weather and climate",
+        "venue": "LHC"
+      }
+    ],
+    "funTechEvents": [
+      {
+        "eventId": "decode-doodle",
+        "eventTitle": "Decode & Doodle",
+        "eventDate": "March 1",
+        "eventDescription": "Pictionary: Draw and guess weather related phrase or words and Connections: Identify the weather-related word or phrase from pictures.",
+        "venue": "LHC smart board"
+      },
+      {
+        "eventId": "met-escape-room",
+        "eventTitle": "MeT Escape Room",
+        "eventDate": "Feb 28 & March 1",
+        "eventDescription": "Solve a series of puzzles with the help of clues around you to escape out of a locked room.",
+        "venue": "RLHC double door second floor"
+      }
+    ],
+    "workshops": [],
+    "hackathons": []
+  },
+  {
+    "clubId": "raptors-club",
+    "clubName": "Raptors Club",
+    "technicalEvents": [
+      {
+        "eventId": "aero-debate",
+        "eventTitle": "Aero Debate",
+        "eventDate": "Feb 28",
+        "eventDescription": "An engaging aero debate session where participants discussed and defended viewpoints on key aerospace topics, fostering critical thinking and technical awareness.",
+        "venue": "RLHC, first Floor smart board"
+      },
+      {
+        "eventId": "payload-recovery",
+        "eventTitle": "Payload Recovery",
+        "eventDate": "March 1",
+        "eventDescription": "A competitive event where teams designed and tested systems to safely deploy and recover a payload, emphasizing engineering design and problem-solving skills.",
+        "venue": "LHC first Floor smart board"
+      }
+    ],
+    "funTechEvents": [],
+    "workshops": [],
+    "hackathons": []
+  },
+  {
+    "clubId": "tedcmit",
+    "clubName": "TEDcMIT",
+    "technicalEvents": [],
+    "funTechEvents": [],
+    "workshops": [
+      {
+        "eventId": "innovate",
+        "eventTitle": "Innovate",
+        "eventDate": "Feb 28",
+        "eventDescription": "TEDcMIT's flagship event featuring inspiring talks and idea-sharing sessions.",
+        "venue": "Rajam hall (12:30 - 4:30)"
+      }
+    ],
+    "hackathons": []
+  },
+  {
+    "clubId": "csmit",
+    "clubName": "CSMIT",
+    "technicalEvents": [
+      {
+        "eventId": "oops-arena",
+        "eventTitle": "OOPS Arena",
+        "eventDate": "Feb 28 & March 1",
+        "eventDescription": "A technical event that tests participants' knowledge of core Object-Oriented Programming concepts through quizzes and problem-solving rounds. It enhances logical thinking and coding fundamentals.",
+        "venue": "admin block lab 3, IT dept lab"
+      },
+      {
+        "eventId": "break-the-query",
+        "eventTitle": "Break The Query",
+        "eventDate": "Feb 28 & March 1",
+        "eventDescription": "Break the Query is a database challenge where participants identify errors, improve logic, and correct SQL queries. The event focuses on understanding how queries work and applying database concepts effectively.",
+        "venue": "admin block lab 3, IT dept lab"
+      },
+      {
+        "eventId": "code-in-chaos",
+        "eventTitle": "Code in Chaos",
+        "eventDate": "Feb 28 & March 1",
+        "eventDescription": "Code in Chaos is a coding event where participants must solve problems while facing unexpected disturbances such as rule changes, time pressure, or added constraints. The challenge tests coding skills, focus, and the ability to adapt and think clearly under pressure.",
+        "venue": "admin block lab 3, IT dept lab"
+      },
+      {
+        "eventId": "lets-c",
+        "eventTitle": "Let's C",
+        "eventDate": "Feb 28 & March 1",
+        "eventDescription": "Let's C is a C programming competition where participants solve logic-based problems, debug code, and write C programs within a time limit. The event tests understanding of C fundamentals and problem-solving skills.",
+        "venue": "admin block lab 3, IT dept lab"
+      },
+      {
+        "eventId": "reverse-coding",
+        "eventTitle": "Reverse Coding",
+        "eventDate": "Feb 28 & March 1",
+        "eventDescription": "Reverse Coding is a logic-based coding event where participants are given the output and must work backwards to write the program that produces it. The event tests analytical thinking, pattern recognition, and problem-solving skills.",
+        "venue": "admin block lab 3, IT dept lab"
+      },
+      {
+        "eventId": "rapid-web-race",
+        "eventTitle": "Rapid Web Race",
+        "eventDate": "Feb 28 & March 1",
+        "eventDescription": "Rapid Web Race is a time-based web development event where participants quickly design and build a webpage based on given requirements. The event tests speed, creativity, and frontend skills under strict time limits.",
+        "venue": "admin block lab 3, IT dept lab"
+      },
+      {
+        "eventId": "code-relay",
+        "eventTitle": "Code Relay",
+        "eventDate": "Feb 28 & March 1",
+        "eventDescription": "Code Relay is a team-based coding event where members solve a programming problem in turns. Each participant contributes one part of the solution, making teamwork and coordination essential. The team that completes the correct solution in the least time wins.",
+        "venue": "admin block lab 3, IT dept lab"
+      },
+      {
+        "eventId": "cad-design",
+        "eventTitle": "CAD Design",
+        "eventDate": "Feb 28",
+        "eventDescription": "A hands-on design event where participants create innovative models using CAD tools. It focuses on creativity, precision, and practical design skills.",
+        "venue": "admin block lab 3"
+      }
+    ],
+    "funTechEvents": [
+      {
+        "eventId": "ipl-auction",
+        "eventTitle": "IPL Auction",
+        "eventDate": "Feb 28 & March 1",
+        "eventDescription": "A strategic simulation inspired by the IPL auction process where participants build teams within a fixed budget. It tests analytical thinking, planning, and decision-making skills.",
+        "venue": "admin block lab 3, IT dept lab"
+      },
+      {
+        "eventId": "connection",
+        "eventTitle": "Connection",
+        "eventDate": "Feb 28 & March 1",
+        "eventDescription": "A fun and engaging event that challenges participants to find logical connections between clues. It sharpens observation, reasoning, and thinking speed.",
+        "venue": "admin block lab 3, IT dept lab"
+      },
+      {
+        "eventId": "free-fire",
+        "eventTitle": "Free Fire",
+        "eventDate": "TBD",
+        "eventDescription": "A competitive multiplayer gaming event where players battle for survival and victory. It highlights teamwork, strategy, and quick reflexes.",
+        "venue": "TBD"
+      },
+      {
+        "eventId": "game-room",
+        "eventTitle": "Game Room",
+        "eventDate": "Feb 28 & March 1",
+        "eventDescription": "A fun recreational event featuring PS5 gaming, where participants can play their favorite games for up to 1 hour. Designed to relax, refresh, and enjoy an immersive gaming experience during the event.",
+        "venue": "admin block lab 3, IT dept lab"
+      }
+    ],
+    "workshops": [
+      {
+        "eventId": "cloudcraft-aws",
+        "eventTitle": "CloudCraft: AWS in Action",
+        "eventDate": "(yet to confirm)",
+        "eventDescription": "A hands-on workshop introducing cloud computing using AWS services. Participants learn core concepts through real-time demonstrations and practical use cases.",
+        "venue": "TBD"
+      },
+      {
+        "eventId": "print3d-workshop",
+        "eventTitle": "Print3D: From Design to Reality",
+        "eventDate": "(yet to confirm)",
+        "eventDescription": "An interactive workshop covering the complete 3D printing workflow, from digital design to final physical output. It highlights modeling, slicing, and real-world applications.",
+        "venue": "TBD"
+      },
+      {
+        "eventId": "career-development-training",
+        "eventTitle": "Career Development & Placement Training",
+        "eventDate": "(yet to confirm)",
+        "eventDescription": "A professional training session focused on career readiness and placement preparation. It covers aptitude, interview skills, resume building, and industry expectations.",
+        "venue": "TBD"
+      }
+    ],
+    "hackathons": []
+  },
+  {
+    "clubId": "pda-mit",
+    "clubName": "PDA MIT",
+    "technicalEvents": [],
+    "funTechEvents": [],
+    "workshops": [
+      {
+        "eventId": "personasync",
+        "eventTitle": "PERSONASync",
+        "eventDate": "Feb 28 FN",
+        "eventDescription": "A skill-building interactive event designed to help participants explore self-awareness, work effectively in teams, adapt to dynamic challenges, and develop strong communication and networking skills in an engaging and practical manner.",
+        "venue": "TBD"
+      },
+      {
+        "eventId": "job-readiness-test",
+        "eventTitle": "Job Readiness Test",
+        "eventDate": "March 1",
+        "eventDescription": "A structured assessment-based event designed to evaluate participants' project planning abilities, presentation skills, on-the-spot communication, aptitude, and group discussion performance, focusing on problem-solving, clarity of thought, and professional readiness.",
+        "venue": "TBD"
+      }
+    ],
+    "hackathons": []
+  },
+  {
+    "clubId": "brc-mit",
+    "clubName": "BRC MIT",
+    "technicalEvents": [],
+    "funTechEvents": [],
+    "workshops": [
+      {
+        "eventId": "plot-craft",
+        "eventTitle": "PLOT CRAFT",
+        "eventDate": "Feb 28 & March 1",
+        "eventDescription": "Plot Craft is an engaging two-day literary challenge designed to test participants' creativity, logic, and teamwork. In Round 1: Think, Link & Decode, teams dive into connection-based questions, story-completion tasks, and cipher decoding that unravel authors, book titles, and genres—blending analytical thinking with literary knowledge. The Final Round: One Minute Story Relay pushes spontaneity to the forefront, as team members collaboratively build a story in real time, adapting instantly to surprise prompts.",
+        "venue": "TBD"
+      }
+    ],
+    "hackathons": []
+  }
+]
