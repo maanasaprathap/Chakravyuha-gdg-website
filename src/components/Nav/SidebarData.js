@@ -27,9 +27,9 @@ export const SidebarData = [
     // ]
   },
   {
-    title: 'Events',
-    path: '/events',
-    sectionId: 'events',
+    title: 'Clubs',
+    path: '/clubs',
+    sectionId: 'clubs',
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,

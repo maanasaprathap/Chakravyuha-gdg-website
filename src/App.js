@@ -13,7 +13,9 @@ import "./pdf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SinglePage from "./SinglePage";
 import EventDetails from "./pages/Event-Details/Event-details";
+import ClubDetails from "./pages/Clubs/ClubDetails";
 import events from "./events.json";
+import clubs from "./clubs.json";
 import homepage from "./static/bgweb.mp4";
 import Brochure from "./pages/Event-Details/Brochure";
 import homepageMob from "./static/bgweb.gif";
@@ -54,6 +56,9 @@ function App() {
         <div className="body">
           <Switch>
             <Route path="/" exact component={SinglePage} />
+            <Route path="/club/:clubId">
+              <ClubDetails />
+            </Route>
             {events.map((event) => (
               <Route path={`/${event.eventId}`} key={event.eventId}>
                 <EventDetails eventDetail={event} />
@@ -67,7 +72,7 @@ function App() {
             <Redirect path="*" to="/" />
           </Switch>
         </div>
-)};
+)}
         {/* <Particles
   params={{
     particles: {
