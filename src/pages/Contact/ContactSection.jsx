@@ -4,22 +4,6 @@ import StudentDetails from "./studentDetails";
 import "./contact.css";
 
 export default function ContactSection() {
-  const sectionRef = useRef(null);
-  const [inView, setInView] = useState(false);
-
-  useEffect(() => {
-    const el = sectionRef.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) setInView(true);
-      },
-      { threshold: 0.15, rootMargin: "0px 0px -50px 0px" }
-    );
-    
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
   return (
     <div style={{ overflow: "hidden" }}>
       <div className="con-title-main con-title-main-uppercase" style={{ fontSize: "1.8em", fontWeight: "bolder" }}>

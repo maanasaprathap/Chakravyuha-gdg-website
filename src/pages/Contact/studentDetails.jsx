@@ -5,8 +5,6 @@ function StudentDetails({ name, event, phoneNo, index }) {
     <>
       <div
         id="studentDetails"
-        data-aos={index & 1 ? "fade-up-left" : "fade-up-right"}
-        data-aos-duration="400"
       >
         <div id="student-body">
           <p className="content-display">{name}</p>

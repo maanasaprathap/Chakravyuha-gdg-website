@@ -1,107 +1,104 @@
-.card_div {
-    width: 300px;
-    height: 380px;
-    position: relative;
-    overflow: visible;
-    background-color: transparent;
-    cursor: pointer;
-    margin: 15px;
-    margin-top: 80px;
-    padding: 0;
-    border-radius: 0;
+/* Event card inherits .box styling from ClubCard - DO NOT redefine .box here */
+
+.event_card_container {
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 0;
+  overflow: hidden;
+  width: 380px;
+  height: 480px;
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
 }
 
-.box {
-  --border-size: 3px;
-  --border-angle: 0turn;
-  width: 300px;
-  height: 380px;
-  background: transparent;
-  position: relative;
-  z-index: 1;
-}
-
-.box::before {
-  content: '';
-  position: absolute;
-  inset: 0;
+.event_card_image_wrapper {
+  width: 100%;
+  height: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  background: #d4cdb8;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px 45px 20px 45px;
   border-radius: 0;
-  padding: 3px;
-  background: conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  animation: bg-spin 3s linear infinite;
-  pointer-events: none;
+  flex-shrink: 0;
+  margin: 0;
 }
 
-.box:hover::before {
-  animation-play-state: paused;
+.event_card_image {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
-.box:hover {
-  z-index: 2;
+.event_card_container:hover .event_card_image {
+  transform: scale(1.05);
 }
 
-@keyframes bg-spin {
-  to {
-    --border-angle: 1turn;
-  }
+.event_card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 30px 28px 30px;
+  text-align: center;
+  flex-shrink: 0;
+  gap: 14px;
+  background: #000000;
 }
 
-@property --border-angle {
-  syntax: "<angle>";
-  inherits: true;
-  initial-value: 0turn;
+.event_card_title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.2;
+  max-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: auto;
 }
 
-.card_div * {
-    transition: all 0.25s ease-in-out;
+.event_view_button {
+  display: inline-block;
+  padding: 13px 30px;
+  background: #0066ff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  width: 85%;
+  max-width: 300px;
+  text-align: center;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
-.card_image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 0;
-}
-
-.card_div:hover .card_image {
-    transform: scale(1.05);
-}
-
-.card_content {
-    position: relative;
-    padding: 15px 10px;
-    text-align: center;
-    color: #FCFCFF;
-    background-color: transparent;
-}
-
-.card_title {
-    font-weight: 600;
-    font-size: 1.1rem;
-    line-height: 1.4;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    color: #fff;
-    letter-spacing: 0.5px;
-}
-
-.card_desc {
-    display: none;
+.event_view_button:hover {
+  background: #0052cc;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 102, 255, 0.5);
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 979px) {
-    .card_div {
-        margin: 30px;
-    }
-
-    .card_content{
-        opacity: 1;
-    }
-
-    .card_image {
-        opacity: 0.25;
-    }
+  .event_card_container {
+    margin: 30px;
+  }
 }

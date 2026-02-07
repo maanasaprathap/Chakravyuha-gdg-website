@@ -16,6 +16,7 @@ import EventDetails from "./pages/Event-Details/Event-details";
 import ClubDetails from "./pages/Clubs/ClubDetails";
 import events from "./events.json";
 import clubs from "./clubs.json";
+import clubEvents from "./clubEvents.json";
 import homepage from "./static/bgweb.mp4";
 import Brochure from "./pages/Event-Details/Brochure";
 import homepageMob from "./static/bgweb.gif";
@@ -23,7 +24,11 @@ import useIsMobile from "./components/useIsMobile";
 
 function App() {
   useEffect(() => {
-    Aos.init({});
+    Aos.init({
+      duration: 400,
+      once: true,
+      offset: 100
+    });
   }, []);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -66,6 +71,9 @@ function App() {
             <Route path="/" exact component={SinglePage} />
             <Route path="/club/:clubId">
               <ClubDetails />
+            </Route>
+            <Route path="/event/:eventId">
+              <EventDetails />
             </Route>
             {events.map((event) => (
               <Route path={`/${event.eventId}`} key={event.eventId}>
