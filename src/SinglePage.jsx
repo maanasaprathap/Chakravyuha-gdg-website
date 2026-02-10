@@ -5,8 +5,6 @@ import Home_main from "./pages/Home/Home_main";
 import Aboutsynsara from "./pages/Home/Aboutsynsara";
 import Aboutinst from "./pages/Home/Aboutinst";
 import ClubsSection from "./pages/Clubs/ClubsSection";
-import ScheduleSection from "./pages/Schedule/ScheduleSection";
-import ContactSection from "./pages/Contact/ContactSection";
 import ReachUsSection from "./ReachUsSection";
 import "./pages/Home/Home.css";
 import "./pages/Clubs/Clubs.css";
@@ -41,15 +39,6 @@ export default function SinglePage() {
       <section id="clubs" style={{ paddingTop: "80px" }}>
         <ClubsSection />
       </section>
-
-      <section id="schedule" style={{ paddingTop: "80px" }}>
-        <ScheduleSection />
-      </section>
-
-      <section id="contact" style={{ paddingTop: "80px" }}>
-        <ContactSection />
-      </section>
-
       <section id="reach-us" style={{ paddingTop: "80px" }}>
         <ReachUsSection />
       </section>
