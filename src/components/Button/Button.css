@@ -1,0 +1,39 @@
+.btn{
+      border-radius: 50px;
+      width: max-content;
+}
+
+.btn-primary{
+      background: #6d28d9;
+      color:rgb(255, 255, 255);
+      width: 200px;
+      border: 1px solid #6d28d9;
+      height: 40px;
+      box-shadow: 0 1px 10px white,0 1px 10px white;
+      transition: opacity 0.2s;
+}
+
+.btn-primary:hover{
+      background: #6d28d9;
+      color: #ffffff;
+      border: 1px solid #6d28d9;
+      opacity:0.8;
+}
+
+.btn-secondary{
+      background: rgba(97, 132, 216, 0.6);
+      border: 1px solid #6d28d9;
+}
+.btn-dark{
+      background: rgb(255, 255, 255);
+      opacity: 0.8;
+      color:#6d28d9;
+      font-family: sans-serif;
+      font-weight: bolder;
+      border: 2px solid rgb(0, 22, 146);
+}
+
+.btn-secondary:hover{
+      background: rgb(211, 211, 211);
+      border: 1px solid #6d28d9;
+}

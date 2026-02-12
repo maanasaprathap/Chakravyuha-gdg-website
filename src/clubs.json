@@ -1,0 +1,91 @@
+[
+  {
+    "clubId": "gdg-mit",
+    "clubName": "GDG MIT",
+    "clubTagline": "Be a Leader, Be a Create, Be a Game Changer",
+    "clubImage": "/clubs/gdg-logo.png",
+    "clubDescription": "Google Developer Groups On Campus - MIT (GDG MIT) is a student-run community focused on fostering technological innovation and skill development. We provide a platform for students to learn, build, and connect with other developers. Through workshops, hackathons, and mentorship programs, we empower students to explore cutting-edge technologies and bring their ideas to life. Join us in shaping the future of tech!"
+  },
+  {
+    "clubId": "ausec-mit",
+    "clubName": "AUSEC - MIT",
+    "clubTagline": "Your Talent is our work",
+    "clubImage": "/clubs/AUSEC-MIT.png",
+    "clubDescription": "Anna University Student Entrepreneurship Club - MIT (AUSEC-MIT) is a dynamic student-driven club that nurtures innovation and entrepreneurial spirit. AU-SEC provides a platform for students to ideate, network, and transform their business concepts into viable ventures through workshops, mentorship, and events. It aims to foster a strong entrepreneurial ecosystem on campus."
+  },
+  {
+    "clubId": "tedcmit",
+    "clubName": "TEDcMIT",
+    "clubTagline": "Inspire, Invent, Innovate",
+    "clubImage": "/clubs/TEDcMIT logo.png",
+    "clubDescription": "The TED Club at our college is a vibrant community focused on inspiring and empowering students through the exchange of ideas. We organize two flagship events, Innovate (even semester) and Originate (odd semester), where we invite renowned speakers from various fields to share their journeys and insights. In addition to these events, we host regular discussions and idea-sharing sessions to foster creativity, innovation, and critical thinking.",
+    "website": "https://clubs.mitindia.edu/src/TedcMit/"
+  },
+  {
+    "clubId": "brc-mit",
+    "clubName": "BRC MIT",
+    "clubTagline": "Read. Reflect. Relate.",
+    "clubImage": "/clubs/BRCMIT.jpeg",
+    "clubDescription": "The Book Readers' Club (BRC MIT) is a student-driven literary community at Madras Institute of Technology that aims to cultivate a strong reading culture and intellectual curiosity among students. The club provides a welcoming platform for readers to explore diverse genres, share perspectives, and engage in thoughtful discussions through reading sessions, literary events, communication activities, and interactive challenges.",
+    "website": "https://clubs.mitindia.edu/src/brc/k1.php"
+  },
+  {
+    "clubId": "quantumit",
+    "clubName": "QUANTuMIT",
+    "clubTagline": "Decipher the quantized",
+    "clubImage": "/clubs/QUANTuMIT.png",
+    "clubDescription": "The QUANTuMIT is a technical student club, stipulating an interactive and a comprehensible platform for the knowledge hunters, facilitating effective learning through mind-boggling discussions, events, sessions and competitions. It is highly imperative that the STEM community must be well-equipped about quantum computing and communication as we are witnessing the monumental outgrowth of computational and algorithmic applications of quantum physics.",
+    "website": "https://clubs.mitindia.edu/src/quantum/contact.html"
+  },
+  {
+    "clubId": "qcmit",
+    "clubName": "QCMIT",
+    "clubTagline": "Knowledge, Competition, Excellence",
+    "clubImage": "/clubs/QCMIT.jpeg",
+    "clubDescription": "The Quiz Club of MIT is the official quizzing club of the college, bringing together students who love learning and competing. We don't just stick to regular quizzes—we add a twist to make them fun and engaging for everyone. Our club organizes and participates in various quizzing events, both within and outside the college. Regular sessions help members improve their trivia skills, teamwork, and critical thinking.",
+    "website": "https://clubs.mitindia.edu/src/Qcmit/index.html"
+  },
+  {
+    "clubId": "mitra",
+    "clubName": "MITRA",
+    "clubTagline": "To foster innovation and practical learning in Robotics and Automation",
+    "clubImage": "/clubs/MITRA.png",
+    "clubDescription": "MITRA is the Robotics Association that plays a pivotal role in enhancing the technical skills of the students, particularly in the fields of robotics, automation, and technology through bootcamps, workshops, and events aimed at equipping students with essential skills and knowledge and hosts the annual national-level technical symposium, Dexbot, which attracts participants from various colleges and showcases innovative projects and hands-on workshops."
+  },
+  {
+    "clubId": "iot",
+    "clubName": "IoT Club",
+    "clubTagline": "Innovate. Connect. Transform.",
+    "clubImage": "/clubs/IoT_logo.jpg",
+    "clubDescription": "The IoT Club at Anna University, part of CIoT, is a platform for students to explore and innovate in the field of the Internet of Things. Through hands-on projects, industry internships, and technical workshops, the club equips members with practical skills and real-world experience. With access to cutting-edge technology and mentorship, students can build strong portfolios and stay ahead in this rapidly evolving field.",
+    "website": "https://www.ciot.mitindia.edu/"
+  },
+  {
+    "clubId": "raptors-club",
+    "clubName": "Raptors Club",
+    "clubTagline": "Soaring beyond limits",
+    "clubImage": "/clubs/raptorsclubmit.jpg",
+    "clubDescription": "Raptors Club is an official aero-modelling club with three divisions: Rocketry, Fixed-Wing, and Multi-Copter. It provides hands-on experience, software training, and fosters innovation in aerospace engineering through design, building, and flight experiments, enhancing technical skills and practical knowledge in aeromodelling."
+  },
+  {
+    "clubId": "mit-met",
+    "clubName": "MIT MET",
+    "clubTagline": "Engineering for a Safer Tomorrow",
+    "clubImage": "/clubs/MET_Logo.png",
+    "clubDescription": "MIT Met, started by students and professors of MIT Campus, Anna University, aims to use Engineering technologies and innovations to develop the Meteorological field and help in Disaster Relief & Management. The team is determined to make projects in the use of Engineering knowledge and skills in Meteorology, paper presentation, tie-up with IMD, and furthermore, help IMD by providing technical support. The team is looking forward to producing high-quality and cost-effective disaster relief and management products."
+  },
+  {
+    "clubId": "csmit",
+    "clubName": "CSMIT",
+    "clubTagline": "Code, Create, Innovate",
+    "clubImage": "/clubs/CSMIT.jpg",
+    "clubDescription": "Computer Science Club MIT is a vibrant tech community that brings together coding enthusiasts, problem solvers, and innovators. Through competitive coding events, workshops, and tech challenges, we help students master programming fundamentals, database concepts, web development, and software engineering skills."
+  },
+  {
+    "clubId": "pda-mit",
+    "clubName": "PDA MIT",
+    "clubTagline": "Professional Development & Aptitude",
+    "clubImage": "/clubs/Psmit logo.jpg",
+    "clubDescription": "The Professional Development and Aptitude club focuses on preparing students for successful careers through skill-building sessions, aptitude training, placement preparation, and professional development workshops. We help students enhance their communication, problem-solving, and career readiness skills."
+  }
+]
