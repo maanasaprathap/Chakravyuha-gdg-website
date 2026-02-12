@@ -54,18 +54,6 @@ export const SidebarData = [
     //   }
     // ]
   },
-  {
-    title: 'Schedule',
-    path: '/schedule',
-    sectionId: 'schedule',
-    icon: <FaIcons.FaCalendar />
-  },
-  {
-    title: 'Contact',
-    path: '/contact',
-    sectionId: 'contact',
-    icon: <IoIcons.IoMdPeople />
-  },
   // {
   //   title: 'ReachUs',
   //   path: '/messages',
