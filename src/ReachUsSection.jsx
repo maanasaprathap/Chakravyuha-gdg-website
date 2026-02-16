@@ -3,42 +3,45 @@ import "./pdf.css";
 
 export default function ReachUsSection() {
   return (
-    <>
-      <div>
-        <h2 className="title">REACH US</h2>
-        <div className="table_container">
-          <table className="schedule_table">
-            <tbody>
-              <tr>
-                <td>
-                  <p className="lg:w-full text-white pl-4 pr-8 lg:pr-12 lg:pl-8 text-justify text-xs sm:text-sm md:text-sm lg:text-[20px] sm:p-8 sm:leading-10">
-                    We have buses operating from Tambaram.<br /><br />
-                    Participants can use these buses to reach our college. The timings will be updated shortly.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <section className="reach-instructions-container">
+      {/* REACH US SECTION */}
+      <div className="section-block" data-aos="fade-up">
+        <h2 className="modern-title">REACH US</h2>
+        <div className="glow-card-wrapper">
+          <div className="violet-card">
+            <p className="reachus-text">
+              We have buses operating from <span className="highlight">Tambaram</span>.
+              <br />
+              <br />
+              Participants can use these buses to reach our college. The timings
+              will be updated shortly.
+            </p>
+          </div>
         </div>
       </div>
-      <div>
-        <h2 className="title">INSTRUCTIONS</h2>
-        <div className="table_container">
-          <table className="schedule_table">
-            <tbody>
-              <tr>
-                <td>
-                  <p className="lg:w-full text-white pl-4 pr-8 lg:pr-12 lg:pl-8 text-justify text-xs sm:text-sm md:text-sm lg:text-[20px] sm:p-8">
-                    1. Students must carry their college ID card on the day of the event.<br /><br />
-                    2. Buses will only operate from Tambaram. For more details regarding the bus facilities, contact the coordinators.<br /><br />
-                    3. All students must come in formal attire.<br />
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+
+      {/* INSTRUCTIONS SECTION */}
+      <div className="section-block" data-aos="fade-up" data-aos-delay="100">
+        <h2 className="modern-title">INSTRUCTIONS</h2>
+        <div className="glow-card-wrapper">
+          <div className="violet-card">
+            <ul className="instructions-list">
+              <li>
+                <span className="list-num">01.</span>
+                <p>Students must carry their <b>college ID card</b> on the day of the event.</p>
+              </li>
+              <li>
+                <span className="list-num">02.</span>
+                <p>Buses will only operate from Tambaram. For more details regarding the bus facilities, contact the coordinators.</p>
+              </li>
+              <li>
+                <span className="list-num">03.</span>
+                <p>All students must come in <b>formal attire</b>.</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

@@ -102,3 +102,31 @@
     margin: 30px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .event_card_container {
+    width: 95vw;
+    max-width: 360px;
+    height: 340px;
+    margin: 12px auto;
+  }
+  .event_card_image_wrapper {
+    height: 140px;
+    min-height: 140px;
+    max-height: 140px;
+    padding: 12px 10px 8px 10px;
+  }
+  .event_card_content {
+    padding: 10px 10px 14px 10px;
+    gap: 8px;
+  }
+  .event_card_title {
+    font-size: 1.05rem;
+    max-height: 36px;
+  }
+  .event_view_button {
+    padding: 8px 10px;
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
+}

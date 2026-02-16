@@ -21,6 +21,7 @@ import homepage from "./static/bgweb.mp4";
 import Brochure from "./pages/Event-Details/Brochure";
 import homepageMob from "./static/bgweb.gif";
 import useIsMobile from "./components/useIsMobile";
+import EventPass from "./pages/Events/EventPass";
 
 function App() {
   useEffect(() => {
@@ -75,6 +76,7 @@ function App() {
             <Route path="/event/:eventId">
               <EventDetails />
             </Route>
+            <Route path="/eventpass" component={EventPass} />
             {events.map((event) => (
               <Route path={`/${event.eventId}`} key={event.eventId}>
                 <EventDetails eventDetail={event} />

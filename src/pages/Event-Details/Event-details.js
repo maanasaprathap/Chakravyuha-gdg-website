@@ -53,38 +53,13 @@ function EventDetails({ eventDetail }) {
             <Nav/> 
         <div style={{ overflow: "hidden" }}>
             {event.eventPosterMob && (
-            <div className="mobile-img-con">
-                <img className="mobile-img" src={event.eventPosterMob} alt="mobile-icon"></img>
-            </div>
+                <div className="mobile-img-con">
+                    <img className="mobile-img" src={event.eventPosterMob} alt="mobile-icon"></img>
+                </div>
             )}
-            <div className="mobile-reg-btn">
-            {event.eventClosed ? (
-                                <b className="mob-cld">
-                                    <i>Registration closed</i>
-                                </b>
-                            ) : event.eventUrl ? (
-                             <a target="_blank" href={event.eventUrl} rel="noreferrer"><button className="event__btn" id="register"><span>Register</span></button></a>
-                            ) : (
-                                <b className="mob-cld">
-                                    <i>Registration link coming soon</i>
-                                </b>
-                            )}
-            </div>
             <div id="event-details-component">
                 <div id="event-details">
-                    <div className="flt-btn">
-                    {event.eventClosed ? (
-                                <b className="cld1">
-                                    <i>Registration closed</i>
-                                </b>
-                            ) : event.eventUrl ? (
-                             <a target="_blank" href={event.eventUrl} rel="noreferrer"><button className="event__btn reg-btn" id="register"><span>Register</span></button></a>
-                            ) : (
-                                <b className="cld1">
-                                    <i>Registration link coming soon</i>
-                                </b>
-                            )}
-                    </div>
+                  
                     <div className="event-top">
                         <div id="event-title-info">
                             <h2 id="event-title">{event.eventTitle}</h2>
@@ -218,7 +193,11 @@ function EventDetails({ eventDetail }) {
                                     <i>Registration closed</i>
                                 </b>
                             ) : event.eventUrl ? (
-                             <a target="_blank" href={event.eventUrl} rel="noreferrer"><button className="event__btn reg-btn" id="register"><span>Register</span></button></a>
+                                <a target="_blank" href={event.eventUrl} rel="noreferrer"><button className="event__btn reg-btn" id="register"><span>Register</span></button></a>
+                            ) : event.clubId === "TEDcMIT" ? (
+                                <a target="_blank" href="https://clubs.mitindia.edu/src/TedcMit/" rel="noreferrer">
+                                    <button className="event__btn reg-btn" id="register"><span>Registration (External Link)</span></button>
+                                </a>
                             ) : (
                                 <b className="cld1">
                                     <i>Registration link coming soon</i>

@@ -1,98 +1,133 @@
-@keyframes rollout {
-    0% {
-        height: 100%;
-        box-shadow: 2px 2px 10px 2px black;
-    }
-    100% {
-        height: 0;
-        box-shadow: 0px 0px 0px 0px black;
-    }
+/* Container spacing */
+.reach-instructions-container {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    background: transparent;
 }
 
-.title {
-    display: block;
-    background-clip: text;
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 32px;
-    width: fit-content;
-    animation: animate-border 0.3s ease-in;
-    text-align: center;
-    margin: auto;
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    background: white;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-.schedule_table {
-    color:white;
-    table-layout: fixed;
+.section-block {
     width: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px #6d28d9;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    /* //border: 0px solid rgba(255, 255, 255, 0.3); */
-    margin-top:30px;
+    max-width: 750px;
 }
 
-.table_container {
+/* Audiowide Title with Violet Glow */
+.modern-title {
+    font-family: 'Audiowide-Regular', sans-serif;
+    color: #ffffff;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.8);
+}
+
+/* Card Wrapper for side glows */
+.glow-card-wrapper {
     position: relative;
-    /* box-shadow: -2px 2px 4px 2px black; */
+    padding: 0 10px;
 }
 
-.table_container::before {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+/* The Violet Card (Glassmorphism Style) */
+.violet-card {
+    /* Slight violet translucent background */
+    background: rgba(30, 10, 60, 0.6); 
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid rgba(168, 85, 247, 0.3); /* Thin violet border */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+/* Side Glow Accents (Matching your image design) */
+.glow-card-wrapper::before,
+.glow-card-wrapper::after {
     content: "";
-    width: 100%;
-    backdrop-filter: blur(4px);
-    animation: rollout 1s ease-in;
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    width: 4px;
+    background: #a855f7;
+    box-shadow: 0 0 20px #a855f7;
+    border-radius: 10px;
+    z-index: 2;
+}
+.glow-card-wrapper::before { left: -2px; }
+.glow-card-wrapper::after { right: -2px; }
+
+/* Text Styles */
+.reachus-text {
+    color: #e0e0ff; /* Silver/Light Violet text */
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    margin: 0;
 }
 
-.schedule_table th {
-    text-align: center;
+.highlight {
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
 }
 
-.schedule_table th {
-    color: white;
-    padding: 10px 12px;
-    font-size: 16px;
-    text-transform: uppercase;
+/* Instructions List */
+.instructions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
-.schedule_table .row_1 {
-    font-weight: 600;
+.instructions-list li {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    color: #d1d1f7;
+    font-size: 1.05rem;
+    line-height: 1.6;
 }
 
-.schedule_table td:not(.row_1) {
-    color:white;
+.list-num {
+    font-family: 'Audiowide-Regular', sans-serif;
+    color: #a855f7;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: -2px;
 }
 
-.schedule_table td {
-    padding: 6px 10px;
-    font-size: 14px;
-}
-
-.schedule_table tr {
-    border: 1px solid gray;
-}
-
-@media only screen and (max-width: 480px) {
-    .schedule_table th {
-        padding: 6px 10px;
+/* MOBILE RESPONSIVE FIXES */
+@media (max-width: 768px) {
+    .modern-title {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
     }
-    .schedule_table td {
-        padding: 4px 6px;
+    
+    .violet-card {
+        padding: 25px 20px;
+    }
+
+    .reachus-text, .instructions-list li {
+        font-size: 0.95rem;
+    }
+    
+    .glow-card-wrapper::before,
+    .glow-card-wrapper::after {
+        width: 3px;
     }
 }
 
-@media only screen and (max-width: 530px) {
-    .title {
-        margin:auto;
+@media (max-width: 480px) {
+    .reach-instructions-container {
+        padding: 40px 15px;
+    }
+    
+    .list-num {
+        font-size: 1rem;
     }
 }
