@@ -1,0 +1,42 @@
+[
+  {
+    "id": "home",
+    "title": "Home",
+    "sectionId": "home"
+  },
+  {
+    "id": "about",
+    "title": "About",
+    "sectionId": "about"
+  },
+  {
+    "id": "clubs",
+    "title": "Clubs",
+    "sectionId": "clubs"
+  },
+  {
+    "id": "passes",
+    "title": "Passes",
+    "sectionId": "passes"
+  },
+  {
+    "id": "gallery",
+    "title": "Gallery",
+    "sectionId": "gallery"
+  },
+  {
+    "id": "faq",
+    "title": "FAQ",
+    "sectionId": "faq"
+  },
+  {
+    "id": "reach-us",
+    "title": "Reach Us",
+    "sectionId": "reach-us"
+  },
+  {
+    "id": "contact",
+    "title": "Contact",
+    "sectionId": "contact"
+  }
+]
