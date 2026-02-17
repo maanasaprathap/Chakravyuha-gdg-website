@@ -242,8 +242,7 @@ const ClubModal = ({ club, isOpen, onClose }) => {
                       `}
                       style={{
                         background: isActive ? `${config.color}30` : 'rgba(255,255,255,0.05)',
-                        borderColor: isActive ? config.color : 'transparent',
-                        border: '1px solid'
+                        border: `1px solid ${isActive ? config.color : 'transparent'}`
                       }}
                       data-testid={`category-${cat}`}
                     >
