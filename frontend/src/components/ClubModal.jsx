@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Code, Gamepad2, Wrench, Trophy, MapPin, Calendar, Clock, Users, ChevronDown, ExternalLink } from 'lucide-react';
+import { X, Code, Gamepad2, Wrench, Trophy, MapPin, Calendar, ChevronDown, ExternalLink } from 'lucide-react';
 import clubEvents from '../clubEvents.json';
 
 const categoryConfig = {
