@@ -1,37 +1,42 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-      "./src/**/*.{js,jsx,ts,tsx}",
-    ],
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {
-      colors:{
+      colors: {
+        'primary': '#7c3aed',
+        'secondary': '#00f0ff',
+        'accent': '#ff0099',
+        'surface': '#0a0a0a',
         'ourpink': '#C8447B',
         'ourpurple': '#FFE5DA',
-        'babypink': '#EFC0D2',
-        'gradpink':'#8D0E0E',
-        'gradred':'#7f1d1d',
-        'gradblack':'#1c1917',
-        'gradpurple':'#fffbd5',
-        'hoverpink':'#B41C5B',
-        'hoverpurple':'#705187',
-        'tablepurple':'#7F6699',
-        'tablepink':'#AA7CA4',
-        'tablegrey':'#202020',
       },
-      // backgroundImage: {
-      //   'daysbackground': "url('images/TIMER 1.png')",
-      //   'hoursbackground': "url('images/TIMER 2.png')",
-      //   'minutesbackground': "url('images/TIMER 3.png')",
-      //   'secondsbackground': "url('images/TIMER 4.png')", 
-      //   'headerbackground' : "url('images/header3.png')",
-      //   'quotebackground': "url('images/bw image .png')",
-      //   'footerbackground': "url('images/footer2.png')",
-      // },
-      // fontFamily: {
-        // 'fina-sans':['"Dancing Script"', cursive,...], 
-      // },
+      fontFamily: {
+        'audiowide': ['Audiowide', 'cursive'],
+        'inter': ['Inter', 'sans-serif'],
+      },
+      animation: {
+        'float': 'float 3s ease-in-out infinite',
+        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+        'shimmer': 'shimmer 2s infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        'pulse-glow': {
+          '0%, 100%': { boxShadow: '0 0 20px rgba(124, 58, 237, 0.4)' },
+          '50%': { boxShadow: '0 0 40px rgba(124, 58, 237, 0.8)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
+      },
     },
   },
   plugins: [],
-}         
+}
