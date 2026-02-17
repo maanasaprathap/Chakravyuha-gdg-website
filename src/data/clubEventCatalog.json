@@ -1,0 +1,34 @@
+{
+  "_comment": "This file references /app/src/clubEvents.json for actual event data",
+  "dataSource": "../clubEvents.json",
+  "categories": [
+    {
+      "id": "technical",
+      "name": "Technical Events",
+      "key": "technicalEvents",
+      "icon": "code",
+      "color": "#00f0ff"
+    },
+    {
+      "id": "funtech",
+      "name": "FunTech Events",
+      "key": "funTechEvents",
+      "icon": "gamepad-2",
+      "color": "#ff0099"
+    },
+    {
+      "id": "workshops",
+      "name": "Workshops",
+      "key": "workshops",
+      "icon": "wrench",
+      "color": "#7c3aed"
+    },
+    {
+      "id": "hackathons",
+      "name": "Hackathons",
+      "key": "hackathons",
+      "icon": "trophy",
+      "color": "#fbbf24"
+    }
+  ]
+}
