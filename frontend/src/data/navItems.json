@@ -30,6 +30,11 @@
     "sectionId": "faq"
   },
   {
+    "id": "reach-us",
+    "title": "Reach Us",
+    "sectionId": "reach-us"
+  },
+  {
     "id": "contact",
     "title": "Contact",
     "sectionId": "contact"
