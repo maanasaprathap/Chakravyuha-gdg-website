@@ -1,47 +1,55 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import Nav from "./components/Nav/Nav";
-import Home_main from "./pages/Home/Home_main";
-import Aboutsynsara from "./pages/Home/Aboutsynsara";
-import Aboutinst from "./pages/Home/Aboutinst";
-import ClubsSection from "./pages/Clubs/ClubsSection";
-import ReachUsSection from "./ReachUsSection";
-import "./pages/Home/Home.css";
-import "./pages/Clubs/Clubs.css";
-import "./pages/Schedule/Schedule.css";
-import "./pages/Contact/contact.css";
+import React from "react";
+import Header from "./components/Header";
+import ParticleCanvas from "./components/ParticleCanvas";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import ClubsSection from "./components/ClubsSection";
+import EventPass from "./components/EventPass";
+import Services from "./components/Services";
+import Gallery from "./components/Gallery";
+import FAQ from "./components/FAQ";
+import ReachUs from "./components/ReachUs";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function scrollToSection(id) {
   const el = document.getElementById(id);
   if (el) {
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    const headerOffset = 80;
+    const elementPosition = el.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
   }
 }
 
 export default function SinglePage() {
-  useEffect(() => {
-    const hash = window.location.hash.slice(1);
-    if (hash) {
-      const el = document.getElementById(hash);
-      if (el) setTimeout(() => el.scrollIntoView({ behavior: "smooth" }), 100);
-    }
-  }, []);
-
   return (
-    <div className="body">
-      <Nav onNavigate={scrollToSection} />
-      <section id="home">
-        <Home_main scrollToSection={scrollToSection} />
-        <Aboutsynsara />
-        <Aboutinst />
-      </section>
+    <div className="min-h-screen relative">
+      {/* Particle Background */}
+      <ParticleCanvas />
 
-      <section id="clubs" style={{ paddingTop: "80px" }}>
+      {/* Header */}
+      <Header onNavigate={scrollToSection} />
+
+      {/* Main Content */}
+      <main>
+        <Hero scrollToSection={scrollToSection} />
+        <About />
         <ClubsSection />
-      </section>
-      <section id="reach-us" style={{ paddingTop: "80px" }}>
-        <ReachUsSection />
-      </section>
+        <EventPass />
+        <Services />
+        <Gallery />
+        <FAQ />
+        <ReachUs />
+        <Contact />
+      </main>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
