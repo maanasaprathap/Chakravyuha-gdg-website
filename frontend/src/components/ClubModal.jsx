@@ -125,15 +125,15 @@ const EventCard = ({ event, color }) => {
                 </div>
               )}
 
-              <a
-                href="#"
+              <button
+                type="button"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white transition-all"
                 style={{ background: color }}
                 data-testid={`register-${event.eventId}`}
               >
                 Register Now
                 <ExternalLink className="w-4 h-4" />
-              </a>
+              </button>
             </div>
           </motion.div>
         )}

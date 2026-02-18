@@ -1,13 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
 import GlassCard from './GlassCard';
 import ClubModal from './ClubModal';
-import clubs from '../clubs.json';
+
+const CLUBS_API_URL = 'https://pdamit.in/api/persohub/clubs';
 
 const ClubsSection = () => {
+  const [clubs, setClubs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
   const [selectedClub, setSelectedClub] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
+
+  const fetchClubs = async () => {
+    setLoading(true);
+    setError('');
+    try {
+      const response = await fetch(CLUBS_API_URL, { method: 'GET' });
+      if (!response.ok) {
+        throw new Error(`Failed to fetch clubs: ${response.status}`);
+      }
+      const data = await response.json();
+      if (!Array.isArray(data)) {
+        throw new Error('Unexpected clubs API response');
+      }
+      setClubs(data);
+    } catch (err) {
+      setError(err?.message || 'Unable to load clubs');
+      setClubs([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchClubs();
+  }, []);
 
   const handleClubClick = (club) => {
     setSelectedClub(club);
@@ -26,7 +55,32 @@ const ClubsSection = () => {
           <h2 className="section-title" data-testid="clubs-title">OUR CLUBS</h2>
           <p className="section-subtitle">Explore our diverse community of tech enthusiasts</p>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+          {loading && (
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+              {Array.from({ length: 8 }).map((_, idx) => (
+                <div
+                  key={`club-skeleton-${idx}`}
+                  className="h-48 md:h-56 rounded-2xl bg-white/5 border border-white/10 animate-pulse"
+                />
+              ))}
+            </div>
+          )}
+
+          {!loading && error && (
+            <div className="rounded-2xl border border-red-400/40 bg-red-500/10 p-5 text-center">
+              <p className="text-red-200 text-sm mb-3">{error}</p>
+              <button
+                type="button"
+                onClick={fetchClubs}
+                className="px-4 py-2 rounded-full bg-red-500/30 text-white hover:bg-red-500/50 transition-colors"
+              >
+                Retry
+              </button>
+            </div>
+          )}
+
+          {!loading && !error && (
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
             {clubs.map((club, index) => (
               <motion.div
                 key={club.clubId}
@@ -64,7 +118,8 @@ const ClubsSection = () => {
                 </GlassCard>
               </motion.div>
             ))}
-          </div>
+            </div>
+          )}
         </div>
       </AnimatedSection>
 

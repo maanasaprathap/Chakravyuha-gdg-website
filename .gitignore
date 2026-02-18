@@ -1,5 +1,8 @@
 node_modules/
-build/-e 
+build/
+frontend/build/
+.DS_Store
+
 # Environment files
 *.env
 *.env.*
