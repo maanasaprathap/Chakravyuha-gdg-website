@@ -77,8 +77,37 @@ function normalizeEvent(rawEvent) {
 
   normalized.dateLabel = createDateLabel(normalized.start_date, normalized.end_date);
   normalized.isOpen = normalized.status === 'OPEN';
+  normalized.poster_url = normalizePosterUrl(normalized.poster_url);
 
   return normalized;
+}
+
+function normalizePosterUrl(value) {
+  if (!value) return null;
+  if (Array.isArray(value)) {
+    const first = value[0];
+    if (typeof first === 'string') return first;
+    if (first && typeof first === 'object' && typeof first.url === 'string') return first.url;
+    return null;
+  }
+  if (typeof value === 'object') {
+    return typeof value.url === 'string' ? value.url : null;
+  }
+  if (typeof value !== 'string') return null;
+
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+
+  // API may return poster_url as a JSON stringified array/object.
+  if (trimmed.startsWith('[') || trimmed.startsWith('{')) {
+    try {
+      const parsed = JSON.parse(trimmed);
+      return normalizePosterUrl(parsed);
+    } catch {
+      return trimmed;
+    }
+  }
+  return trimmed;
 }
 
 export async function fetchCommunityEvents() {
