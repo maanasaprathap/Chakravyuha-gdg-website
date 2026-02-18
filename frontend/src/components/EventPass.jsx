@@ -92,7 +92,7 @@ const EventPass = () => {
                     ))}
                   </ul>
 
-                  {/* CTA Button */}
+                  {/* CTA Button 
                   <button
                     className={`
                       w-full py-3 rounded-xl font-semibold text-white
@@ -103,6 +103,7 @@ const EventPass = () => {
                   >
                     Get {tier.name}
                   </button>
+                  */}
                 </div>
               </motion.div>
             );
