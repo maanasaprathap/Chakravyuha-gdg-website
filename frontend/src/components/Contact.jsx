@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
-import sectionData from '../data/sections.single-page.json';
+import { useContentSection } from '../data/chakravyuhaContent';
 import { Mail, Phone, Instagram, Linkedin, Twitter, Youtube, User } from 'lucide-react';
 
 const Contact = () => {
-  const { contact } = sectionData;
+  const contact = useContentSection('contact');
 
   const socialIcons = {
     instagram: Instagram,

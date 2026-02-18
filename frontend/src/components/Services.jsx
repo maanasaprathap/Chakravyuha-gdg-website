@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
-import sectionData from '../data/sections.single-page.json';
+import { useContentSection } from '../data/chakravyuhaContent';
 import { Utensils, Bus, Bed, HeartPulse, Car, Wifi } from 'lucide-react';
 
 const iconMap = {
@@ -14,7 +14,7 @@ const iconMap = {
 };
 
 const Services = () => {
-  const { services } = sectionData;
+  const services = useContentSection('services');
 
   return (
     <AnimatedSection id="services" className="py-20 md:py-32 bg-black/30">

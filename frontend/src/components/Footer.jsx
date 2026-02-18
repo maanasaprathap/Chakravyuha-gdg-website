@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import sectionData from '../data/sections.single-page.json';
+import { useContentSection } from '../data/chakravyuhaContent';
 import { Instagram, Linkedin, Twitter, Youtube, Heart } from 'lucide-react';
 
 const Footer = () => {
-  const { footer, contact } = sectionData;
+  const footer = useContentSection('footer');
+  const contact = useContentSection('contact');
 
   const socialIcons = {
     instagram: Instagram,
@@ -70,7 +71,7 @@ const Footer = () => {
           <div className="text-sm text-gray-500">
             <p>{footer.copyright}</p>
             <p className="mt-2 flex items-center justify-center gap-1">
-              Made with <Heart className="w-4 h-4 text-red-500" fill="currentColor" /> by MIT Students
+              Made with <Heart className="w-4 h-4 text-red-500" fill="currentColor" /> by PDA TECH and GDG MIT
             </p>
           </div>
         </div>

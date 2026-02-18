@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
-import sectionData from '../data/sections.single-page.json';
+import { useContentSection } from '../data/chakravyuhaContent';
 import { Sparkles, Building2, CheckCircle } from 'lucide-react';
 
 const About = () => {
-  const { aboutChakravyuha, aboutMIT } = sectionData;
+  const aboutChakravyuha = useContentSection('aboutChakravyuha');
+  const aboutMIT = useContentSection('aboutMIT');
 
   return (
     <AnimatedSection id="about" className="py-20 md:py-32">

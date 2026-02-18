@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
-import sectionData from '../data/sections.single-page.json';
+import { useContentSection } from '../data/chakravyuhaContent';
 import { Check, Star } from 'lucide-react';
 
 const EventPass = () => {
-  const { eventPass } = sectionData;
+  const eventPass = useContentSection('eventPass');
 
   const getPassStyle = (tier) => {
     switch (tier.id) {

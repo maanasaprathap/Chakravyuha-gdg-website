@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
-import sectionData from '../data/sections.single-page.json';
+import { useContentSection } from '../data/chakravyuhaContent';
 
 const FAQItem = ({ item, isOpen, onClick, index }) => {
   return (
@@ -47,7 +47,7 @@ const FAQItem = ({ item, isOpen, onClick, index }) => {
 
 const FAQ = () => {
   const [openId, setOpenId] = useState(null);
-  const { faq } = sectionData;
+  const faq = useContentSection('faq');
 
   const handleClick = (id) => {
     setOpenId(openId === id ? null : id);

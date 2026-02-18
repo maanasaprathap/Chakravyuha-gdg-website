@@ -2,11 +2,11 @@ import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import CountdownTimer from './CountdownTimer';
-import sectionData from '../data/sections.single-page.json';
+import { useContentSection } from '../data/chakravyuhaContent';
 import { Trophy, Briefcase, Calendar, Users, ArrowDown } from 'lucide-react';
 
 const Hero = ({ scrollToSection }) => {
-  const { hero } = sectionData;
+  const hero = useContentSection('hero');
   const titleRef = useRef(null);
   const statsRef = useRef(null);
 
@@ -108,16 +108,15 @@ const Hero = ({ scrollToSection }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
           >
-            <button
-              onClick={() => scrollToSection && scrollToSection('clubs')}
+            <a
+              href={hero.registerUrl || 'https://unstop.com/college-fests/chakravyuha-2026-madras-institute-of-technology-mit-anna-university-chennai-tamil-nadu-439521'}
               className="btn-neon group"
               data-testid="register-btn"
             >
               <span className="flex items-center gap-2">
                 EXPLORE EVENTS
-                <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
               </span>
-            </button>
+            </a>
           </motion.div>
 
           {/* Stats */}

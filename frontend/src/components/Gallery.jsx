@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
-import sectionData from '../data/sections.single-page.json';
+import { useContentSection } from '../data/chakravyuhaContent';
 import { X, ZoomIn } from 'lucide-react';
 
 const Gallery = () => {
-  const { gallery } = sectionData;
+  const gallery = useContentSection('gallery');
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (

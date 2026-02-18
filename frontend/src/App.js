@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import SinglePage from "./SinglePage";
+import { ChakravyuhaContentProvider } from "./data/chakravyuhaContent";
 
 function App() {
   useEffect(() => {
@@ -21,12 +22,14 @@ function App() {
 
   return (
     <Router>
-      <div className="app">
-        <Switch>
-          <Route path="/" exact component={SinglePage} />
-          <Redirect path="*" to="/" />
-        </Switch>
-      </div>
+      <ChakravyuhaContentProvider>
+        <div className="app">
+          <Switch>
+            <Route path="/" exact component={SinglePage} />
+            <Redirect path="*" to="/" />
+          </Switch>
+        </div>
+      </ChakravyuhaContentProvider>
     </Router>
   );
 }

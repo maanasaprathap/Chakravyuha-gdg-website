@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
 import GlassCard from './GlassCard';
 import ClubModal from './ClubModal';
+import { fetchCommunityEvents } from '../data/communityEventsClient';
 
 const CLUBS_API_URL = 'https://pdamit.in/api/persohub/clubs';
 
@@ -12,8 +13,11 @@ const ClubsSection = () => {
   const [error, setError] = useState('');
   const [selectedClub, setSelectedClub] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
+  const [events, setEvents] = useState([]);
+  const [eventsLoading, setEventsLoading] = useState(true);
+  const [eventsError, setEventsError] = useState('');
 
-  const fetchClubs = async () => {
+  const fetchClubs = useCallback(async () => {
     setLoading(true);
     setError('');
     try {
@@ -32,11 +36,26 @@ const ClubsSection = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
+
+  const fetchEvents = useCallback(async () => {
+    setEventsLoading(true);
+    setEventsError('');
+    try {
+      const data = await fetchCommunityEvents();
+      setEvents(data);
+    } catch (err) {
+      setEventsError(err?.message || 'Unable to load events');
+      setEvents([]);
+    } finally {
+      setEventsLoading(false);
+    }
+  }, []);
 
   useEffect(() => {
     fetchClubs();
-  }, []);
+    fetchEvents();
+  }, [fetchClubs, fetchEvents]);
 
   const handleClubClick = (club) => {
     setSelectedClub(club);
@@ -128,6 +147,10 @@ const ClubsSection = () => {
         club={selectedClub}
         isOpen={modalOpen}
         onClose={closeModal}
+        events={events}
+        eventsLoading={eventsLoading}
+        eventsError={eventsError}
+        onRetryEvents={fetchEvents}
       />
     </>
   );
