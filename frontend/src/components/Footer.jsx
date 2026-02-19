@@ -1,17 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useContentSection } from '../data/chakravyuhaContent';
-import { Instagram, Linkedin, Twitter, Youtube, Heart } from 'lucide-react';
+import { Instagram, Heart } from 'lucide-react';
 
 const Footer = () => {
   const footer = useContentSection('footer');
   const contact = useContentSection('contact');
 
   const socialIcons = {
-    instagram: Instagram,
-    linkedin: Linkedin,
-    twitter: Twitter,
-    youtube: Youtube
+    instagram: Instagram
   };
 
   return (
@@ -36,19 +33,21 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="flex gap-4 mb-8">
-            {Object.entries(contact.socials).map(([platform, url]) => {
+            {Object.entries(contact.socials).filter(([platform]) => ['instagram'].includes(platform)).map(([platform, url]) => {
               const Icon = socialIcons[platform] || Instagram;
+              const tagLabel = platform.charAt(0).toUpperCase() + platform.slice(1);
               return (
                 <motion.a
                   key={platform}
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-lg bg-white/5 hover:bg-purple-500/20 transition-colors"
+                  className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white/5 hover:bg-purple-500/20 transition-colors"
                   whileHover={{ y: -3 }}
                   data-testid={`footer-social-${platform}`}
                 >
                   <Icon className="w-5 h-5 text-gray-400 hover:text-purple-400" />
+                  <span className="text-xs font-medium text-gray-300">{tagLabel}</span>
                 </motion.a>
               );
             })}

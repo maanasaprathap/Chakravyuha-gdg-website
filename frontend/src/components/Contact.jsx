@@ -2,16 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
 import { useContentSection } from '../data/chakravyuhaContent';
-import { Mail, Phone, Instagram, Linkedin, Twitter, Youtube, User } from 'lucide-react';
+import { Mail, Phone, Instagram, User } from 'lucide-react';
 
 const Contact = () => {
   const contact = useContentSection('contact');
 
   const socialIcons = {
-    instagram: Instagram,
-    linkedin: Linkedin,
-    twitter: Twitter,
-    youtube: Youtube
+    instagram: Instagram
   };
 
   return (
@@ -58,18 +55,20 @@ const Contact = () => {
             <div className="mt-6 pt-6 border-t border-white/10">
               <h4 className="text-sm text-gray-400 mb-4">Follow Us</h4>
               <div className="flex gap-3">
-                {Object.entries(contact.socials).map(([platform, url]) => {
+                {Object.entries(contact.socials).filter(([platform]) => ['instagram'].includes(platform)).map(([platform, url]) => {
                   const Icon = socialIcons[platform] || Instagram;
+                  const tagLabel = platform.charAt(0).toUpperCase() + platform.slice(1);
                   return (
                     <a
                       key={platform}
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 rounded-lg bg-white/5 hover:bg-purple-500/20 transition-colors"
+                      className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white/5 hover:bg-purple-500/20 transition-colors"
                       data-testid={`social-${platform}`}
                     >
                       <Icon className="w-5 h-5 text-gray-400 hover:text-purple-400" />
+                      <span className="text-xs font-medium text-gray-300">{tagLabel}</span>
                     </a>
                   );
                 })}
